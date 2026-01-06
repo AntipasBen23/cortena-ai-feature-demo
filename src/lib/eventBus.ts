@@ -5,17 +5,17 @@ import { QueueEvent, StreamMessage } from '@/types/services';
  * Enables pub/sub pattern and async communication between "microservices"
  */
 
-type EventCallback = (data: any) => void;
-type EventTopic = string;
+export type EventCallback = (data: any) => void;
+export type EventTopic = string;
 
-interface Subscription {
+export interface Subscription {
   id: string;
   topic: EventTopic;
   callback: EventCallback;
   serviceSource?: string;
 }
 
-interface QueueMetrics {
+export interface QueueMetrics {
   totalPublished: number;
   totalConsumed: number;
   currentDepth: number;
@@ -305,6 +305,3 @@ export function createSubscriber<T>(
 ): string {
   return eventBus.subscribe(topic, callback, serviceSource);
 }
-
-// Export types
-export type { EventCallback, EventTopic, Subscription, QueueMetrics };

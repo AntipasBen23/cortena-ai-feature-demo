@@ -6,10 +6,9 @@ import {
   Anomaly, 
   Forecast, 
   ConfidenceScore,
-  ServiceHealth,
-  QueueMetrics 
+  ServiceHealth
 } from '@/types/services';
-import { eventBus, TOPICS } from '@/lib/eventBus';
+import { eventBus, TOPICS, QueueMetrics } from '@/lib/eventBus';
 import { transactionProcessor } from '@/services/transactions/processor';
 import { mlService, generateForecast, calculateConfidenceScore } from '@/services/ml/forecaster';
 import { apiGateway } from '@/services/gateway/router';
