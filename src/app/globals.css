@@ -1,8 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --background: #020617;
-  --foreground: #f1f5f9;
+  /* Cortena brand colors - Light cream background with black text */
+  --background: #F5F3EE;
+  --foreground: #0A0A0A;
+  --card-bg: #FFFFFF;
+  --border: #E5E2DB;
+  --accent: #2D3436;
+  --success: #27AE60;
+  --warning: #F39C12;
+  --danger: #E74C3C;
+  --muted: #7F8C8D;
 }
 
 body {
@@ -15,21 +23,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Custom scrollbar */
+/* Custom scrollbar - Cortena style */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #1e293b;
+  background: #E5E2DB;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #475569;
+  background: #7F8C8D;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #64748b;
+  background: #2D3436;
 }
